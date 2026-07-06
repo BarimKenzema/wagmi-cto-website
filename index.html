@@ -115,6 +115,15 @@
             text-decoration: none;
         }
         .links-grid a:hover { text-decoration: underline; }
+        .date-badge {
+            background: #2a2a2a;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            color: #999;
+            display: inline-block;
+            margin-left: 10px;
+        }
         @media (max-width: 640px) {
             .grid { grid-template-columns: 1fr; }
             h1 { font-size: 2.2rem; }
@@ -158,7 +167,7 @@
     </p>
 
     <!-- TOKENOMICS -->
-    <h2>📊 Tokenomics</h2>
+    <h2>📊 Tokenomics <span class="date-badge">As of July 6, 2026</span></h2>
     <div class="grid">
         <div class="card"><strong>Market Cap</strong><br />~$2,800</div>
         <div class="card"><strong>Liquidity</strong><br />~$5,600</div>
@@ -168,11 +177,14 @@
     <p style="color: #aaa; font-size: 0.95rem;">
         At this price, there is <strong>no one left to dump on you</strong>. The dev is gone. The community is in control.
     </p>
+    <p style="color: #666; font-size: 0.8rem; margin-top: 4px;">
+        * Figures are approximate and may fluctuate. Last updated July 6, 2026.
+    </p>
 
     <!-- HOW TO BUY -->
     <h2>🛒 How to Buy</h2>
     <ol style="margin-left: 22px; color: #ccc; line-height: 1.8;">
-        <li>Go to <strong>PancakeSwap</strong> — <a href="https://pancakeswap.finance" target="_blank" style="color: #fbb03b;">pancakeswap.finance</a></li>
+        <li>Go to <strong>PancakeSwap</strong> — <a href="https://pancakeswap.finance/swap?utm_source=Trust_Android_Browser&chain=bsc&inputCurrency=0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c&outputCurrency=0x2A88dCC726C49b6ffb4372619c5520D6CDD6cC73" target="_blank" style="color: #fbb03b;">Click here to buy $WAGMI directly</a></li>
         <li>Connect your wallet (Trust Wallet, MetaMask, or any BSC-compatible wallet)</li>
         <li>Swap <strong>BNB</strong> for <strong>$WAGMI</strong></li>
         <li>Slippage: set to <strong>1–2%</strong></li>
@@ -228,7 +240,7 @@
 
     <!-- WHITEPAPER BUTTON -->
     <div style="margin-top: 18px;">
-        <a href="whitepaper.html" class="btn">📄 Download / Read Whitepaper</a>
+        <a href="whitepaper.html" class="btn">📄 Read the Whitepaper</a>
     </div>
 
     <!-- RULES -->
