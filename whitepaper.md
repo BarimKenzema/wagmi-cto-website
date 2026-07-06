@@ -102,6 +102,16 @@
             margin-top: 20px;
         }
         .btn-back:hover { background: #fbb03b; }
+        .date-badge {
+            background: #2a2a2a;
+            padding: 2px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            color: #999;
+            display: inline-block;
+            margin-left: 10px;
+            font-weight: normal;
+        }
         @media (max-width: 640px) {
             .wp { padding: 28px 18px; }
             h1 { font-size: 2rem; }
@@ -143,13 +153,13 @@
         <li><strong>Broken trust</strong> — Investors losing confidence after repeated exploits</li>
     </ul>
     <p>
-        In 2026, the market defaults to distrust — holders have statistical reasons to expect most tokens to fail[reference:3]. $WAGMI addresses this by being a <strong>community takeover</strong>, not a new launch with anonymous developers and opaque tokenomics.
+        In 2026, the market defaults to distrust — holders have statistical reasons to expect most tokens to fail. $WAGMI addresses this by being a <strong>community takeover</strong>, not a new launch with anonymous developers and opaque tokenomics.
     </p>
 
     <!-- 3. THE SOLUTION: CTO -->
     <h2>3. The Solution: Community Takeover (CTO)</h2>
     <p>
-        A <strong>Community Takeover (CTO)</strong> occurs when the holders and broader community of a token take over its running, marketing, and coordination after the original developers abandon the project or lose the community's trust[reference:4]. This is a natural evolution — the community steps in to preserve value, restore operations, and increase transparency[reference:5].
+        A <strong>Community Takeover (CTO)</strong> occurs when the holders and broader community of a token take over its running, marketing, and coordination after the original developers abandon the project or lose the community's trust. This is a natural evolution — the community steps in to preserve value, restore operations, and increase transparency.
     </p>
     <p>
         <strong>Why $WAGMI is the perfect CTO candidate:</strong>
@@ -164,7 +174,7 @@
     </div>
 
     <!-- 4. TOKENOMICS -->
-    <h2>4. Tokenomics</h2>
+    <h2>4. Tokenomics <span class="date-badge">As of July 6, 2026</span></h2>
     <h3>4.1 Supply &amp; Distribution</h3>
     <div class="highlight-box">
         <strong>Total Supply:</strong> 100%<br />
@@ -174,7 +184,7 @@
         <strong>Vesting:</strong> None — all tokens are already in circulation
     </div>
     <p>
-        Unlike most token launches where large allocations are reserved for teams, investors, or advisors with vesting schedules[reference:6], $WAGMI has <strong>zero locked or reserved tokens</strong>. The supply is fully distributed and transparent. This eliminates the risk of large cliff unlocks that typically cause price drops[reference:7].
+        Unlike most token launches where large allocations are reserved for teams, investors, or advisors with vesting schedules, $WAGMI has <strong>zero locked or reserved tokens</strong>. The supply is fully distributed and transparent. This eliminates the risk of large cliff unlocks that typically cause price drops.
     </p>
 
     <h3>4.2 Market Data</h3>
@@ -187,10 +197,13 @@
     <p>
         At this market cap, there is <strong>no one left to dump on you</strong>. The developer is gone. The supply is in the pool. The community is in control.
     </p>
+    <p style="color: #666; font-size: 0.85rem; margin-top: 4px;">
+        * Figures are approximate and may fluctuate. Last updated July 6, 2026.
+    </p>
 
     <h3>4.3 Why This Tokenomics Model Works</h3>
     <p>
-        By 2026, tokenomics has shifted toward sustainability, long-term alignment, and real-world value capture[reference:8]. $WAGMI's model is inherently sustainable because:
+        By 2026, tokenomics has shifted toward sustainability, long-term alignment, and real-world value capture. $WAGMI's model is inherently sustainable because:
     </p>
     <ul>
         <li><strong>No inflation</strong> — No new tokens can be minted (ownership is renounced)</li>
@@ -228,7 +241,7 @@
         Liquidity Pool (LP) tokens have been sent to the dead address. This means:
     </p>
     <ul>
-        <li>The developer cannot withdraw liquidity — no "rug pull" is possible[reference:9]</li>
+        <li>The developer cannot withdraw liquidity — no "rug pull" is possible</li>
         <li>The token can always be traded as long as there is demand</li>
         <li>The pool is permanently locked</li>
     </ul>
@@ -275,7 +288,7 @@
         <strong>Join the movement:</strong><br />
         💬 <strong>Telegram:</strong> <a href="https://t.me/WAGMIctoBNBSmartChain" target="_blank" style="color:#fbb03b;">WAGMIctoBNBSmartChain</a><br />
         🐦 <strong>X (Twitter):</strong> <a href="https://twitter.com/WAGMIbnbCTO" target="_blank" style="color:#fbb03b;">@WAGMIbnbCTO</a><br />
-        🌐 <strong>Website:</strong> <a href="#" style="color:#fbb03b;">[your-site.pages.dev]</a>
+        🌐 <strong>Website:</strong> <a href="https://wagmi-cto-website.baraye99.workers.dev" target="_blank" style="color:#fbb03b;">wagmi-cto-website.baraye99.workers.dev</a>
     </div>
 
     <!-- 8. HOLDER PRIVILEGES -->
@@ -320,6 +333,9 @@
         </p>
         <p style="color:#ccc;">
             $WAGMI is a <strong>community project</strong> with no guarantees of returns. Past performance does not indicate future results. <strong>Always do your own research (DYOR)</strong> before investing. Invest only what you can afford to lose.
+        </p>
+        <p style="color:#666; font-size:0.85rem; margin-top:8px;">
+            * All figures approximate as of July 6, 2026. May fluctuate.
         </p>
     </div>
 
