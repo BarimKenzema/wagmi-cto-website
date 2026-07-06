@@ -1,97 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>$WAGMI – Community Takeover</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: Arial, sans-serif;
-            background: #0d0d0d;
-            color: #fff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: #0b0b0b;
+            color: #eaeaea;
             line-height: 1.6;
             padding: 20px;
         }
         .container {
-            max-width: 900px;
+            max-width: 960px;
             margin: 0 auto;
-            background: #1a1a1a;
-            padding: 40px;
-            border-radius: 16px;
+            background: #151515;
+            padding: 40px 35px;
+            border-radius: 20px;
             border: 1px solid #2a2a2a;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
         }
-        h1 { font-size: 2.8rem; background: linear-gradient(135deg, #f7931a, #fbb03b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        h2 { color: #f7931a; margin-top: 30px; border-bottom: 1px solid #333; padding-bottom: 10px; }
-        .highlight { background: #2a2a2a; padding: 15px; border-radius: 8px; border-left: 4px solid #f7931a; margin: 15px 0; }
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 15px 0; }
-        .card { background: #252525; padding: 15px; border-radius: 8px; border: 1px solid #333; }
-        .card .check { color: #4caf50; font-weight: bold; }
-        .cta { background: #f7931a; color: #000; padding: 15px 30px; border-radius: 8px; text-decoration: none; display: inline-block; font-weight: bold; margin-top: 20px; }
-        .cta:hover { background: #fbb03b; }
-        .contract { background: #0d0d0d; padding: 15px; border-radius: 8px; font-family: monospace; word-break: break-all; border: 1px solid #333; }
-        .footer { margin-top: 40px; text-align: center; color: #666; font-size: 0.9rem; }
-        @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } h1 { font-size: 2rem; } .container { padding: 20px; } }
+        h1 {
+            font-size: 3.2rem;
+            background: linear-gradient(135deg, #f7931a, #fbb03b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+        }
+        h2 {
+            color: #f7931a;
+            margin-top: 36px;
+            border-bottom: 2px solid #2a2a2a;
+            padding-bottom: 10px;
+            font-size: 1.6rem;
+        }
+        h3 {
+            color: #fbb03b;
+            margin-top: 24px;
+            font-size: 1.2rem;
+        }
+        .highlight {
+            background: #1e1e1e;
+            padding: 18px 22px;
+            border-radius: 12px;
+            border-left: 5px solid #f7931a;
+            margin: 18px 0;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin: 16px 0;
+        }
+        .card {
+            background: #1e1e1e;
+            padding: 14px 18px;
+            border-radius: 10px;
+            border: 1px solid #2e2e2e;
+        }
+        .card .check { color: #4caf50; font-weight: 700; }
+        .contract-box {
+            background: #0d0d0d;
+            padding: 14px 18px;
+            border-radius: 10px;
+            font-family: 'Courier New', monospace;
+            word-break: break-all;
+            border: 1px solid #333;
+            font-size: 0.95rem;
+            color: #fbb03b;
+        }
+        .btn {
+            display: inline-block;
+            background: #f7931a;
+            color: #000;
+            padding: 14px 32px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            margin-top: 18px;
+            transition: background 0.2s;
+        }
+        .btn:hover { background: #fbb03b; }
+        .btn-outline {
+            background: transparent;
+            color: #f7931a;
+            border: 2px solid #f7931a;
+            padding: 12px 28px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 18px;
+            display: inline-block;
+            transition: 0.2s;
+        }
+        .btn-outline:hover { background: #f7931a; color: #000; }
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #666;
+            font-size: 0.85rem;
+            border-top: 1px solid #222;
+            padding-top: 25px;
+        }
+        .links-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 10px 0 5px;
+        }
+        .links-grid a {
+            color: #fbb03b;
+            text-decoration: none;
+        }
+        .links-grid a:hover { text-decoration: underline; }
+        @media (max-width: 640px) {
+            .grid { grid-template-columns: 1fr; }
+            h1 { font-size: 2.2rem; }
+            .container { padding: 22px 18px; }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🚀 $WAGMI</h1>
-        <p style="font-size: 1.4rem; color: #f7931a; margin-bottom: 10px;">Community Takeover • BNB Chain</p>
-        <p style="font-size: 1.2rem; color: #aaa;">We're All Gonna Make It.</p>
 
-        <div class="highlight">
-            <strong>🔥 The Story:</strong> The dev rugged this token ~1 year ago and vanished. 
-            We found a safe, verified contract and took it over. <strong>Now it's ours.</strong>
-        </div>
+<div class="container">
 
-        <h2>🔒 Safety Check</h2>
-        <div class="grid">
-            <div class="card"><span class="check">✅</span> Contract Verified</div>
-            <div class="card"><span class="check">✅</span> Ownership Renounced</div>
-            <div class="card"><span class="check">✅</span> Liquidity Burned</div>
-            <div class="card"><span class="check">✅</span> 98% Supply in LP</div>
-            <div class="card"><span class="check">✅</span> Top Holder = 2%</div>
-            <div class="card"><span class="check">✅</span> No Dev Wallets</div>
-        </div>
+    <!-- HEADER -->
+    <h1>🚀 $WAGMI</h1>
+    <p style="font-size: 1.5rem; color: #f7931a; font-weight: 600; margin: 6px 0 4px;">Community Takeover · BNB Chain</p>
+    <p style="font-size: 1.2rem; color: #aaa; margin-bottom: 10px;">We're All Gonna Make It.</p>
 
-        <h2>📊 Tokenomics</h2>
-        <ul style="margin-left: 20px; color: #ccc;">
-            <li><strong>Market Cap:</strong> ~$2,800</li>
-            <li><strong>Liquidity:</strong> ~$5,600</li>
-            <li><strong>Total Supply:</strong> 100% (98% in LP)</li>
-            <li><strong>Holders:</strong> Fully decentralized</li>
-        </ul>
-
-        <h2>📜 Contract Address</h2>
-        <div class="contract">0x2a88dcc726c49b6ffb4372619c5520d6cdd6cc73</div>
-
-        <h2>🛒 How to Buy</h2>
-        <ol style="margin-left: 20px; color: #ccc;">
-            <li>Go to <strong>PancakeSwap</strong></li>
-            <li>Connect your wallet (Trust Wallet, MetaMask)</li>
-            <li>Swap <strong>BNB</strong> for <strong>$WAGMI</strong></li>
-            <li>Slippage: <strong>1-2%</strong></li>
-        </ol>
-
-        <h2>🏆 Holder Privileges</h2>
-        <ul style="margin-left: 20px; color: #ccc;">
-            <li>🎁 <strong>Premium VPN</strong> – Secure browsing via Happ client</li>
-            <li>📈 <strong>Elite Trading Signals</strong> – Private channel access</li>
-        </ul>
-        <p style="color: #aaa;">Contact <strong>@YourVerificationUsername</strong> on Telegram to verify.</p>
-
-        <h2>🌐 Join the Movement</h2>
-        <p>
-            <strong>Telegram:</strong> t.me/yourgroup<br>
-            <strong>X (Twitter):</strong> @YourXHandle
-        </p>
-
-        <a href="#" class="cta">📄 Download Whitepaper</a>
-
-        <div class="footer">
-            ⚠️ Not financial advice. Always DYOR.
-        </div>
+    <div class="highlight">
+        <strong>🔥 The Story:</strong> The original developer rugged this token ~1 year ago and vanished.
+        They left behind a <strong>perfectly safe, verified contract</strong> — renounced, burned, and ready for a community to take over.
+        <strong>Now it's ours.</strong>
     </div>
+
+    <!-- SAFETY -->
+    <h2>🔒 Safety Check</h2>
+    <div class="grid">
+        <div class="card"><span class="check">✅</span> Contract Verified on BscScan</div>
+        <div class="card"><span class="check">✅</span> Ownership Renounced (dead wallet)</div>
+        <div class="card"><span class="check">✅</span> Liquidity Burned (permanently locked)</div>
+        <div class="card"><span class="check">✅</span> 98% of Supply in Liquidity Pool</div>
+        <div class="card"><span class="check">✅</span> Top Holder &lt; 1% — No Whales</div>
+        <div class="card"><span class="check">✅</span> No Dev Wallets — No Dump Risk</div>
+    </div>
+
+    <!-- CONTRACT -->
+    <h2>📜 Contract Address</h2>
+    <div class="contract-box">0x2a88dcc726c49b6ffb4372619c5520d6cdd6cc73</div>
+    <p style="margin-top: 8px; font-size: 0.9rem;">
+        <a href="https://bscscan.com/token/0x2a88dcc726c49b6ffb4372619c5520d6cdd6cc73" target="_blank" style="color: #fbb03b;">
+            🔍 View on BscScan
+        </a>
+    </p>
+
+    <!-- TOKENOMICS -->
+    <h2>📊 Tokenomics</h2>
+    <div class="grid">
+        <div class="card"><strong>Market Cap</strong><br />~$2,800</div>
+        <div class="card"><strong>Liquidity</strong><br />~$5,600</div>
+        <div class="card"><strong>Total Supply</strong><br />100% (98% in LP)</div>
+        <div class="card"><strong>Holders</strong><br />Fully decentralized</div>
+    </div>
+    <p style="color: #aaa; font-size: 0.95rem;">
+        At this price, there is <strong>no one left to dump on you</strong>. The dev is gone. The community is in control.
+    </p>
+
+    <!-- HOW TO BUY -->
+    <h2>🛒 How to Buy</h2>
+    <ol style="margin-left: 22px; color: #ccc; line-height: 1.8;">
+        <li>Go to <strong>PancakeSwap</strong> — <a href="https://pancakeswap.finance" target="_blank" style="color: #fbb03b;">pancakeswap.finance</a></li>
+        <li>Connect your wallet (Trust Wallet, MetaMask, or any BSC-compatible wallet)</li>
+        <li>Swap <strong>BNB</strong> for <strong>$WAGMI</strong></li>
+        <li>Slippage: set to <strong>1–2%</strong></li>
+    </ol>
+    <p style="margin-top: 6px; font-size: 0.9rem; color: #999;">
+        Contract: <code style="background:#222;padding:2px 8px;border-radius:4px;">0x2a88dcc726c49b6ffb4372619c5520d6cdd6cc73</code>
+    </p>
+
+    <!-- CTO EXPLANATION -->
+    <h2>🤝 What Is a Community Takeover (CTO)?</h2>
+    <p>A CTO happens when:</p>
+    <ul style="margin-left: 22px; color: #ccc; line-height: 1.8;">
+        <li>A token is abandoned by its developer</li>
+        <li>The community steps in to take over</li>
+        <li>The contract is safe and can't be changed</li>
+        <li>The community becomes the new "team"</li>
+    </ul>
+    <div class="highlight" style="margin-top: 12px;">
+        <strong>$WAGMI is a textbook CTO:</strong> ✅ Dev is gone · ✅ Contract is safe · ✅ No team wallets · ✅ Community owns it
+    </div>
+
+    <!-- WHY SO LOW -->
+    <h2>📉 Why Is the Price So Low?</h2>
+    <p>Because the dev dumped everything a year ago. The token has been dead — until now. We're reviving it. The low price means <strong>massive upside potential</strong> if the community grows.</p>
+
+    <!-- $1 CHALLENGE -->
+    <h2>🎯 The "$1 a Day" Challenge</h2>
+    <p>A simple way to build momentum:</p>
+    <ul style="margin-left: 22px; color: #ccc; line-height: 1.8;">
+        <li>Buy <strong>$1 of $WAGMI</strong> for at least 10 days</li>
+        <li>Network and find like-minded community members</li>
+        <li>It's about <strong>consistency</strong>, not greed</li>
+    </ul>
+    <p style="margin-top: 8px;">
+        <a href="https://t.me/WAGMIctoBNBSmartChain/365" target="_blank" class="btn-outline">💬 Join the Challenge on Telegram</a>
+    </p>
+
+    <!-- HOLDER PRIVILEGES -->
+    <h2>🏆 Holder Privileges</h2>
+    <p>$WAGMI holders unlock exclusive perks. <strong>To verify your holder status, contact:</strong> <code style="background:#222;padding:2px 10px;border-radius:4px;">@DostraNamoos</code></p>
+    <ul style="margin-left: 22px; color: #ccc; line-height: 1.8;">
+        <li>🔒 <strong>Premium VPN</strong> – High-speed, secure browsing via the Happ client</li>
+        <li>📈 <strong>Elite Trading Signals</strong> – Private channel access</li>
+    </ul>
+
+    <!-- COMMUNITY -->
+    <h2>🌐 Join the Movement</h2>
+    <div class="links-grid">
+        <span>💬 <strong>Telegram:</strong> <a href="https://t.me/WAGMIctoBNBSmartChain" target="_blank">WAGMIctoBNBSmartChain</a></span>
+        <span>🐦 <strong>X (Twitter):</strong> <a href="https://twitter.com/WAGMIbnbCTO" target="_blank">@WAGMIbnbCTO</a></span>
+        <span>📄 <strong>Whitepaper:</strong> <a href="whitepaper.html" target="_blank">Read the Full Whitepaper</a></span>
+    </div>
+
+    <!-- WHITEPAPER BUTTON -->
+    <div style="margin-top: 18px;">
+        <a href="whitepaper.html" class="btn">📄 Download / Read Whitepaper</a>
+    </div>
+
+    <!-- RULES -->
+    <h2>📜 Community Rules</h2>
+    <ol style="margin-left: 22px; color: #ccc; line-height: 1.8;">
+        <li>No spam</li>
+        <li>No FUD (Fear, Uncertainty, Doubt)</li>
+        <li>Be respectful</li>
+        <li>No price manipulation</li>
+        <li>DYOR – Do Your Own Research</li>
+        <li>No financial advice</li>
+    </ol>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        ⚠️ <strong>Not financial advice.</strong> Cryptocurrency investments carry significant risk. Always do your own research (DYOR).<br />
+        $WAGMI is a community project with no guarantees of returns. Invest only what you can afford to lose.
+    </div>
+
+</div>
+
 </body>
 </html>
